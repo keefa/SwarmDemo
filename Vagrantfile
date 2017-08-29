@@ -53,6 +53,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", path: "scripts/install-docker.sh", privileged: false
     config.vm.provision "shell", path: "scripts/docker-swarm-init.sh", args: "-ip #{subnet}.2"
     config.vm.provision "shell", path: "scripts/run-visualizer.sh"
+    config.vm.provision "shell", path: "scripts/portainer_create_service.sh"
+    
   end
 
   config.vm.define "sw-lin-02" do |config|
@@ -67,7 +69,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network :private_network, ip: "#{subnet}.3", gateway: "#{subnet}.1"
     config.vm.provision "shell", path: "scripts/install-docker.sh", privileged: false
     config.vm.provision "shell", path: "scripts/docker-swarm-join.sh", args: "-managerip #{subnet}.2 -ip #{subnet}.3"
-    config.vm.provision "shell", path: "scripts/portainer_create_service.sh"
 
   end
 
