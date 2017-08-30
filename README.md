@@ -1,7 +1,6 @@
-# Mixed Linux and Windows Docker swarm-mode
+# Build a mixed Linux and Windows Docker Swarm
 
-This is a local setup using Vagrant with VMware Fusion to demonstrate a mixed Linux and Windows Docker swarm-mode.
-
+This is a local setup using Vagrant demonstrate a mixed Linux and Windows Docker swarm-mode.
 
 ## Vagrant boxes
 
@@ -20,11 +19,6 @@ To create the four node cluster run
 vagrant up
 ```
 
-Depending on your host's memory you may want to spin up only two nodes to have a minimal Linux and Windows Server cluster.
-
-```
-vagrant up sw-lin-01 sw-win-01
-```
 
 
 ## Swarm Manager
