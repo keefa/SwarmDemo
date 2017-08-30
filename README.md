@@ -43,6 +43,8 @@ open http://192.168.36.2:8080
 
 You can run Portainer as a service in the swarm on port 9000  
 
+(images/visualizer-portainer.gif)
+
 ## Example usage: 
 Use docker-compose to build bootstrap website
 
