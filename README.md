@@ -49,3 +49,4 @@ You can run Portainer as a service in the swarm on port 9000
 Use docker-compose to build bootstrap website
 
 
+Credits to StefanScherer
