@@ -45,12 +45,11 @@ open http://192.168.36.2:8080
 
 ![mixed Linux and Windows Docker swarm](images/mixed-swarm.png)
 
-## Example usage: Overlay network
-
-The folder `demo` contains some helper scripts to use the overlay network. Beginning with Windows Server 2016 update 1066 or Windows 10 Creators Update you can use overlay network.
-
-The overlay network also works in a mixed Linux and Windows Docker swarm.
-
 ### Run Portainer service
 
 You can run Portainer as a service in the swarm on port 9000  
+
+## Example usage: 
+Use docker-compose to build bootstrap website
+
+
